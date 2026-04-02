@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import Footer from "./components/Footer"
+import ReportIssue from "./pages/ReportIssue"
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
       <Navbar/>
       <Routes>
          <Route path="/" element={<Home />} />
-         {/* <Route path="/report-issue" element={<div>Report Issue Page</div>} />
-         <Route path="/track-issue" element={<div>Track Issue Page</div>} />
+         <Route path="/report-issue" element={<ReportIssue />} />
+         {/* <Route path="/track-issue" element={<div>Track Issue Page</div>} />
          <Route path="/dashboard" element={<div>Dashboard Page</div>} /> */}
          <Route path="/login" element={<Login />} />
       </Routes>
